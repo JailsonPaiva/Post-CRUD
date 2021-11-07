@@ -1,0 +1,11 @@
+<h1>Seu post</h1>
+
+<form action="/attpost/{{post.id}}" method="POST">
+    <h2>Titulo:</h2>
+    <input type="text" value="{{post.titulo}}" name="novoTitulo">
+
+    <h2>Conteudo</h2>
+    <textarea name="novoConteudo">{{post.conteudo}}</textarea>
+
+    <button type="submit">Atualizar</button>
+</form>

@@ -1,0 +1,23 @@
+<h1>Feed de Posts</h1>
+
+<a href="/post">
+    <button class="novoPost">Criar um novo post</button>
+</a>
+
+{{#each posts}}
+	<div>
+        <h1>{{titulo}}</h1>
+        <p>{{conteudo}}</p>
+            <p class="data">{{createdAt}}</p>
+        
+            <div class="btnarea">
+                <a href="/deletar/{{id}}">
+                <button>Deletar</button>
+                </a>
+                <a href="/att/{{id}}">
+                <button class="att">Atualizar</button>
+                </a>
+            </div>
+        <hr>
+    </div>
+{{/each}}
